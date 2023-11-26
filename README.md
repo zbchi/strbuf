@@ -29,7 +29,7 @@ git clone git@github.com:xiyou-linuxer/StrbufTest.git
 cd strbuf
 ```
 例如：\
-张三若想在 `strbuf` 这项练习中测试代码，则需在 `strbuf` 目录下创建 `ZhangSan`
+张三若想在 `strbuf` 这项练习中测试代码，则需在 `strbuf` 目录下创建 `ZhangSan.c`
 ```
 strbuf
 ├── FileTest
