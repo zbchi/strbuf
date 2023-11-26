@@ -1,4 +1,4 @@
-## Exercise
+## StrbufTest
 
 [![CC BY SA 4.0](https://img.shields.io/github/license/XUPTLinuxGroup2020/Favorites?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 
