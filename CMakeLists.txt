@@ -4,10 +4,8 @@ project(Strbuf CXX C)
 set(CMAKE_CXX_STANDARD 11)
 add_compile_options(-x c++ -std=c++11)
 
-# Add the source files to the project
 set(SOURCE_FILES strbuf/test.cpp)
 
-# Add compiler flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address -fno-omit-frame-pointer -fsanitize-address-use-after-scope -g")
 add_definitions(-D__SA_TEST__)
 
@@ -22,7 +20,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 include(FetchContent)
 FetchContent_Declare(
   googletest
-  # Specify the commit you depend on and update it regularly.
+ 
   URL https://github.com/google/googletest/archive/5376968f6948923e2411081fd9372e71a59d8e77.zip
   DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
@@ -35,10 +33,8 @@ set(BUILD_GTEST OFF CACHE BOOL "Builds the googletest subproject" FORCE)
 
 FetchContent_MakeAvailable(googletest)
 
-# Create an executable
 add_executable(Strbuf ${SRC} ${SOURCE_FILES} )
 
-# Link the executable with Google Test and pthread
 target_link_libraries(Strbuf gtest_main pthread)
 
 include(GoogleTest)
