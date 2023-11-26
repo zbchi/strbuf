@@ -4,6 +4,7 @@ mkdir -p ../build && cd ../build
 
 cmake .. && make
 
+cd ..
 if [ $? -eq 0 ]; then
   if [ -x Strbuf ]; then
     ./Strbuf
