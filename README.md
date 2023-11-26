@@ -26,7 +26,7 @@ git clone git@github.com:xiyou-linuxer/StrbufTest.git
 
 进入strbuf目录
 ```sh
-cd strbuf
+cd StrbufTest/strbuf
 ```
 例如：\
 张三若想在 `strbuf` 这项练习中测试代码，则需在 `strbuf` 目录下创建 `ZhangSan.c`
@@ -38,9 +38,7 @@ strbuf
 └── ZhangSan.c
 ```
 测试代码\
-运行上一级目录的测试脚本
 ```sh
-cd ..
 ./test.sh
 ```
 当出现下面的字样时，说明你已经通过了所有的测试点
