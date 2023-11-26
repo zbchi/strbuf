@@ -21,6 +21,13 @@ fork该仓库到本地
 ```sh
 git clone git@github.com:xiyou-linuxer/StrbufTest.git 
 ```
+---
+
+如果出现vscode找不到gtest头文件的问题
+在vscode的`settings.json`中加入
+```
+"configurationProvider": "vector-of-bool.cmake-tools",
+```
 
 ## 测试流程
 
@@ -28,7 +35,9 @@ git clone git@github.com:xiyou-linuxer/StrbufTest.git
 ```sh
 cd StrbufTest/strbuf
 ```
-例如：\
+创建测试代码 
+
+例如：
 张三若想在 `strbuf` 这项练习中测试代码，则需在 `strbuf` 目录下创建 `ZhangSan.c`
 ```
 strbuf
@@ -37,7 +46,7 @@ strbuf
 ├── test.cpp
 └── ZhangSan.c
 ```
-测试代码\
+测试代码
 ```sh
 ./test.sh
 ```
