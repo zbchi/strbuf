@@ -2,36 +2,36 @@
 
 [![CC BY SA 4.0](https://img.shields.io/github/license/XUPTLinuxGroup2020/Favorites?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-本仓库用于本地测试Strbuf任务
+本仓库用于本地测试 Strbuf 任务
 
 ## 环境搭建
-cmake的版本应大于等于3.14
+Cmake 的版本应大于等于 3.14
 
-ubuntu用户安装cmake
+Ubuntu 用户安装 Cmake
 ```sh
 sudo apt install cmake
 ```
-arch系用户安装cmake
+Arch 系用户安装 Cmake
 ```sh
 yay cmake
 ```
 ---
 
-fork该仓库到本地
+fork 该仓库到本地
 ```sh
 git clone git@github.com:xiyou-linuxer/StrbufTest.git 
 ```
 ---
 
-如果出现vscode找不到gtest头文件的问题
-在vscode的`settings.json`中加入
+如果出现 vscode 找不到 gtest 头文件的问题
+在 vscode 的 `settings.json` 中加入
 ```
 "configurationProvider": "vector-of-bool.cmake-tools",
 ```
 
 ## 测试流程
 
-进入strbuf目录
+进入 strbuf 目录
 ```sh
 cd StrbufTest/strbuf
 ```
