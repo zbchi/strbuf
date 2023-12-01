@@ -23,8 +23,8 @@ git clone git@github.com:xiyou-linuxer/StrbufTest.git
 ```
 ---
 
-如果出现 vscode 找不到 gtest 头文件的问题
-在 vscode 的 `settings.json` 中加入
+如果出现 `VS Code` 找不到 gtest 头文件的问题
+在 `VS Code` 的 `settings.json` 中加入
 ```
 "configurationProvider": "vector-of-bool.cmake-tools",
 ```
