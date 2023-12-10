@@ -1,62 +1,45 @@
-## StrbufTest
+## Strbuf
 
 [![CC BY SA 4.0](https://img.shields.io/github/license/XUPTLinuxGroup2020/Favorites?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-本仓库用于本地测试 Strbuf 任务
+本仓库存放 XiyouLinuxGroup 2023 级成员部分练习项目．
 
-## 环境搭建
-Cmake 的版本应大于等于 3.14
+### 本地测试
 
-Ubuntu 用户安装 Cmake
-```sh
-sudo apt install cmake
-```
-Arch 系用户安装 Cmake
-```sh
-yay cmake
-```
----
+详见 [StrbufTest](./StrbufTest/README.md)
 
-fork 该仓库到本地
-```sh
-git clone git@github.com:xiyou-linuxer/StrbufTest.git 
-```
----
+### 参与方式
 
-如果出现 `VS Code` 找不到 gtest 头文件的问题
-在 `VS Code` 的 `settings.json` 中加入
-```
-"configurationProvider": "vector-of-bool.cmake-tools",
-```
+fork 本仓库，在 fork 得到的仓库中提交后，通过 Pull Request 贡献．
 
-## 测试流程
+若提交多个文件，请在项目文件夹中创建自己的文件夹（文件夹名称为采用`驼峰命名法`的`姓名汉语拼音全拼`），并将欲提交的文件放置创建的文件夹中．
 
-进入 strbuf 目录
-```sh
-cd StrbufTest/strbuf
-```
-创建测试代码 
+>例如：
+>张三若想在 `strbuf` 这项练习中提交 `1.c` `2.c` `3.c` 这三个文件，则需在 `strbuf` 目录下创建 `ZhangSan`．并将 `1.c` `2.c` `3.c` 放置在里面．
+>
+>```
+>strbuf
+>├── FileTest
+>├── strbuf.h
+>└── ZhangSan
+>    ├── 1.c
+>    ├── 2.c
+>    └── 3.c
+>```
 
-例如：
-张三若想在 `strbuf` 这项练习中测试代码，则需在 `strbuf` 目录下创建 `ZhangSan.c`
-```
-strbuf
-├── FileTest
-├── strbuf.h
-├── test.cpp
-└── ZhangSan.c
-```
-测试代码
-```sh
-./test.sh
-```
-当出现下面的字样时，说明你已经通过了所有的测试点
-```
-[----------] Global test environment tear-down
-[==========] 38 tests from 5 test suites ran. (1 ms total)
-[  PASSED  ] 38 tests.
+若只提交一个文件请将其直接放置在项目文件夹中（文件名为采用驼峰命名法的姓名汉语拼音全拼）．
 
-```
+>例如：
+>李四若想在 `strbuf` 这项练习中提交 `main.c` 这 1 个文件，则需将文件重命名为 `LiSi.c` 并放置在 `strbuf` 文件夹中．
+>
+>```
+>strbuf
+>├── LiSi.c
+>├── strbuf.h
+>└── test.cpp
+>```
+
+由 XiyouLinuxGroup 2022 级成员对 Pull Request 内容进行审核，审核通过后合并入主分支．
 
 ### LICENSE
 

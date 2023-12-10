@@ -1,0 +1,22 @@
+name: gtest1
+
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout master
+        uses: actions/checkout@master
+      # - name: Setup tmate session
+      #   uses: mxschmitt/action-tmate@v3
+      #   env:
+      #     PR_ID: ${{ github.event.pull_request.number }}
+          # GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+      - name: run test
+        run: chmod +x   ./.github/test.sh && timeout 300  ./.github/test.sh  || code=$?; if [[  $code -ne 0 ]]; then exit $code; fi
+        shell: bash
+        env:
+          PR_ID: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
