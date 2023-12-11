@@ -1,4 +1,4 @@
-#include "strbuf.h"
+//#include "strbuf.h"
 
 // struct strbuf {
 //   int len;     //当前缓冲区（字符串）长度
