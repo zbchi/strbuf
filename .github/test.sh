@@ -3,11 +3,10 @@
 NL=$'\n'
 Code="$NL\`\`\`$NL"
 
-Comment(){
+Comment() {
     COMMENTS_URL=$(cat $GITHUB_EVENT_PATH | jq -r .pull_request.comments_url)
     if [ ${#1} -ne 0 ]; then
-        PAYLOAD=$(echo '{}' | jq --arg body "$1" '.body = $body') &>/dev/null
-
+        PAYLOAD=$(echo '{}' | jq --arg body "$1" '.body = $body' 2>/dev/null)
         curl -s -S -H "Authorization: token $GITHUB_TOKEN" --header "Content-Type: application/vnd.github.VERSION.text+json" --data "${PAYLOAD}" "$COMMENTS_URL" &>/dev/null
     fi
 }
