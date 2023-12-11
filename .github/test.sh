@@ -24,7 +24,11 @@ URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/$PR_ID/files"
 
 echo $URL
 
-changeFile=$(curl -s -d -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.[] | .filename')
+//changeFile=$(curl -s -d -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.[] | .filename')
+changeFile=$(curl -s -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.[] | keys_unsorted[] as $key | "\($key): \(.[$key])"' | while read -r line; do echo "$line"; done)
+echo $changeFile
+echo "hello"
+
 clang++-12 "$changeFile" strbuf/test.cpp -lgtest -lgtest_main -lpthread -Wall 2>compiler.log
 backUp=$?
 compiler_output=$(cat compiler.log)
