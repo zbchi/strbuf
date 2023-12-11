@@ -24,11 +24,9 @@ URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/$PR_ID/files"
 
 echo $URL
 
-//changeFile=$(curl -s -d -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.[] | .filename')
+changeFile=$(curl -s -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.filename')
 response=$(curl -s -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq '.')
 echo $response
-echo NL
-echo $(curl -s -d -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL)
 
 clang++-12 "$changeFile" strbuf/test.cpp -lgtest -lgtest_main -lpthread -Wall 2>compiler.log
 backUp=$?
