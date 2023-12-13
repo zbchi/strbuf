@@ -24,7 +24,7 @@ URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/$PR_ID/files"
 
 echo $URL
 
-changeFile=$(curl -s -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.[1].filename')
+changeFile=$(curl -s -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq -r '.[].filename')
 response=$(curl -s -X GET -H "Authorization: Bearer $GITHUB_TOKEN" $URL | jq '.')
 echo $response
 
