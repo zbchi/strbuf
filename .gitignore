@@ -1,6 +1,5 @@
 .vscode
 .idea
-**/strbuf
 **/build/
 /**/a.out
 StrbufTest/**/*c
