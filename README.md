@@ -2,7 +2,7 @@
 
 [![CC BY SA 4.0](https://img.shields.io/github/license/XUPTLinuxGroup2020/Favorites?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-本仓库存放 XiyouLinuxGroup 2023 级成员部分练习项目．
+本仓库存放 XiyouLinuxGroup 2024 级成员部分练习项目．
 
 ### 本地测试
 
@@ -38,7 +38,7 @@ fork 本仓库，在 fork 得到的仓库中提交后，通过 Pull Request 贡�
 >└── test.cpp
 >```
 
-由 XiyouLinuxGroup 2022 级成员对 Pull Request 内容进行审核，审核通过后合并入主分支．
+由 XiyouLinuxGroup 2023 级成员对 Pull Request 内容进行审核，审核通过后合并入主分支．
 
 ### LICENSE
 
