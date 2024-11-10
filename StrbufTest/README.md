@@ -13,9 +13,9 @@ yay cmake
 ```
 ---
 
-fork该仓库到本地
+fork 该仓库并 clone 该 fork 仓库到本地
 ```sh
-git clone git@github.com:xiyou-linuxer/StrbufTest.git 
+git clone git@github.com:[用户名]/[fork 仓库名].git 
 ```
 ---
 
