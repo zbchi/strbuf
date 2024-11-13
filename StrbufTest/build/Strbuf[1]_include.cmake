@@ -1,0 +1,5 @@
+if(EXISTS "/home/zhubin/Strbuf动态扩容缓冲区/StrbufTest/build/Strbuf[1]_tests.cmake")
+  include("/home/zhubin/Strbuf动态扩容缓冲区/StrbufTest/build/Strbuf[1]_tests.cmake")
+else()
+  add_test(Strbuf_NOT_BUILT Strbuf_NOT_BUILT)
+endif()

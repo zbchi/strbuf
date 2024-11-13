@@ -1,0 +1,1 @@
+/usr/bin/c++  -fsanitize=address -fno-omit-frame-pointer -fsanitize-address-use-after-scope -g CMakeFiles/Strbuf.dir/strbuf/ZhuBin.c.o CMakeFiles/Strbuf.dir/strbuf/test.cpp.o -o /home/zhubin/Strbuf动态扩容缓冲区/StrbufTest/Strbuf  lib/libgtest_main.a -lpthread lib/libgtest.a 
