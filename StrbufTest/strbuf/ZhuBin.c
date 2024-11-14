@@ -303,15 +303,15 @@ bool strbuf_begin_judge(char *target_str, const char *str, int strnlen)
 
 }
 /*
-* @brief 获取目标字符串的指定子串
-*
-* @param target_buf 目标字符串
-* @param begin 开始下标（包含）
-* @param end 结束下标（不包含）
-* @param len target_buf 的长度
-* @return char* 指向获取的子串的指针，如果参数不合法则返回 NULL
-*
-* @note 下标从0开始，[begin, end)表示左闭右开区间
+brief 获取目标字符串的指定子串
+
+param target_buf 目标字符串
+param begin 开始下标（包含）
+param end 结束下标（不包含）
+param len target_buf 的长度
+return char* 指向获取的子串的指针，如果参数不合法则返回 NULL
+
+note 下标从0开始，[begin, end)表示左闭右开区间
 */
 char *strbuf_get_mid_buf(char *target_buf, int begin, int end, int len)
 {
